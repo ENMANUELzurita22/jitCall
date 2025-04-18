@@ -10,4 +10,8 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'redirect-notification',
+    loadComponent: () => import('./redirect-notification/redirect-notification.page').then( m => m.RedirectNotificationPage)
+  },
 ];
